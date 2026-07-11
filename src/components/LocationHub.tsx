@@ -4,6 +4,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   ArrowRight,
   CheckCircle2,
+  Info,
   Loader2,
   MapPin,
   MessageCircle,
@@ -154,7 +155,7 @@ export function LocationHub() {
     >
       <div className="rounded-3xl border border-white/15 bg-white shadow-[0_24px_80px_rgba(0,62,137,0.28)]">
         <div className="overflow-hidden rounded-t-3xl border-b border-[var(--brand-blue)]/10 bg-gradient-to-br from-[#f3f8ff] via-white to-[#eefbf4] px-5 py-6 sm:px-8 sm:py-8">
-          <p className="mb-2 inline-flex max-w-full items-start gap-2 rounded-2xl bg-[var(--brand-blue)]/8 px-3 py-1.5 text-left text-xs font-semibold leading-snug tracking-wide text-[var(--brand-blue)] sm:items-center">
+          <p className="mb-3 inline-flex max-w-full items-start gap-2 rounded-2xl bg-[var(--brand-blue)]/8 px-3 py-1.5 text-left text-xs font-semibold leading-snug tracking-wide text-[var(--brand-blue)] sm:items-center">
             <ShieldCheck className="mt-0.5 size-3.5 shrink-0 sm:mt-0" aria-hidden />
             Sua localização não é armazenada, usamos só para achar o melhor grupo para você
           </p>
@@ -162,11 +163,44 @@ export function LocationHub() {
             id="hub-title"
             className="font-[family-name:var(--font-display)] text-2xl font-bold leading-tight text-[var(--brand-navy)] sm:text-3xl"
           >
-            Em segundos, você chega ao WhatsApp certo
+            Como entrar no grupo certo
           </h2>
           <p className="mt-3 text-base leading-relaxed text-slate-600">
-            Informe onde você está ou digite sua cidade, e vamos te levar ao
-            grupo da sua região.
+            Esta página só faz uma coisa: te levar ao WhatsApp da sua região.
+          </p>
+
+          <ol className="mt-5 space-y-2.5 text-sm text-slate-700">
+            <li className="flex gap-3">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-navy)] text-xs font-bold text-white">
+                1
+              </span>
+              <span>Informe sua localização ou digite sua cidade.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-navy)] text-xs font-bold text-white">
+                2
+              </span>
+              <span>A gente indica o grupo do seu vale ou região.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-navy)] text-xs font-bold text-white">
+                3
+              </span>
+              <span>Você entra no WhatsApp e passa a receber as novidades.</span>
+            </li>
+          </ol>
+
+          <p className="mt-5 flex items-start gap-2 rounded-xl bg-slate-50 px-3 py-3 text-sm leading-relaxed text-slate-600">
+            <Info
+              className="mt-0.5 size-4 shrink-0 text-[var(--brand-blue)]"
+              aria-hidden
+            />
+            <span>
+              <strong className="font-semibold text-slate-800">O que é este grupo:</strong>{" "}
+              canal de avisos do Deputado para a sua região.{" "}
+              <strong className="font-semibold text-slate-800">Não é</strong> um
+              grupo de conversa entre participantes. Só o Deputado envia mensagens.
+            </span>
           </p>
         </div>
 
@@ -217,11 +251,12 @@ export function LocationHub() {
                   <p className="font-[family-name:var(--font-display)] text-xl font-bold text-[var(--brand-navy)]">
                     {flow.city.name}
                   </p>
-                  <p className="mt-1 text-sm text-slate-600">
-                    Seu grupo:{" "}
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                    Pronto. O grupo indicado para você é{" "}
                     <span className="font-semibold text-[var(--brand-blue)]">
                       {flow.group.name}
                     </span>
+                    . Toque abaixo para entrar no WhatsApp.
                   </p>
                 </div>
               </div>
@@ -233,7 +268,7 @@ export function LocationHub() {
                 className="flex min-h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-2xl bg-[var(--brand-green)] px-5 text-base font-bold text-white shadow-[0_12px_30px_rgba(0,167,89,0.35)] transition duration-200 hover:brightness-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--brand-green)]/40 active:scale-[0.98]"
               >
                 <WhatsAppIcon className="size-6" />
-                Entrar no grupo agora
+                Entrar no grupo de WhatsApp
                 <ArrowRight className="size-5" aria-hidden />
               </a>
 
@@ -326,7 +361,7 @@ export function LocationHub() {
           {flow.status === "ready" && !manualOpen && (
             <p className="flex items-center justify-center gap-2 text-center text-xs text-slate-500">
               <MessageCircle className="size-3.5" aria-hidden />
-              Lá você recebe novidades e informações do Deputado sobre a sua região.
+              Depois de entrar, você só recebe avisos. Não precisa responder.
             </p>
           )}
         </div>

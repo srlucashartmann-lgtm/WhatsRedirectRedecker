@@ -15,13 +15,13 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Grupo da sua região | Deputado Lucas Redecker",
+  title: "Grupo de WhatsApp da sua região | Deputado Lucas Redecker",
   description:
-    "Entre no grupo de WhatsApp da sua cidade, vale ou macrorregião e acompanhe o trabalho do Deputado Federal Lucas Redecker.",
+    "Entre no grupo de WhatsApp do Deputado Lucas Redecker na sua região. Receba novidades e informações. Só o Deputado envia mensagens.",
   openGraph: {
-    title: "Grupo da sua região | Deputado Lucas Redecker",
+    title: "Grupo de WhatsApp da sua região | Deputado Lucas Redecker",
     description:
-      "Em poucos segundos, você encontra o grupo de WhatsApp da sua região no Rio Grande do Sul.",
+      "Informe sua cidade, encontre o grupo regional e receba novidades do Deputado no WhatsApp.",
     locale: "pt_BR",
     type: "website",
   },
