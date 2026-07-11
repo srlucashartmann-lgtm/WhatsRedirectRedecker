@@ -42,7 +42,7 @@ export async function GET(request: Request) {
   try {
     const response = await fetch(url.toString(), {
       headers: {
-        "User-Agent": "redirect-whats-lucas-redecker/1.0 (campanha local)",
+        "User-Agent": "redirect-whats-lucas-redecker/1.0 (grupos regionais)",
         Accept: "application/json",
       },
       next: { revalidate: 86400 },

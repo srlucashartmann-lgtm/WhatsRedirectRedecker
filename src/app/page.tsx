@@ -35,23 +35,23 @@ export default function HomePage() {
         </div>
 
         <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--brand-yellow)]">
-          Campanha 2026 · Rio Grande do Sul
+          Rio Grande do Sul
         </p>
         <h1 className="max-w-2xl font-[family-name:var(--font-display)] text-3xl font-extrabold leading-tight text-white sm:text-5xl">
           Encontre o grupo da sua região
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-blue-100 sm:text-lg">
-          Receba informações, acompanhe o trabalho e fortaleça a campanha do
-          Deputado Lucas Redecker com gente da sua cidade e do seu vale.
+          Receba informações e acompanhe o trabalho do Deputado Lucas Redecker
+          com gente da sua cidade e do seu vale.
         </p>
       </header>
 
       <LocationHub />
 
       <footer className="relative z-10 mt-auto border-t border-white/10 px-4 py-6 text-center text-xs text-blue-100/70">
-        <p>Deputado Federal Lucas Redecker · Apoio regional no Rio Grande do Sul</p>
+        <p>Deputado Federal Lucas Redecker · Grupos regionais no Rio Grande do Sul</p>
         <p className="mt-1">
-          Sua localização serve só para indicar o grupo certo — nada é armazenado.
+          Sua localização não é armazenada — serve só para indicar o grupo certo.
         </p>
       </footer>
     </main>

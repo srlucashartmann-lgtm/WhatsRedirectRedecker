@@ -154,9 +154,9 @@ export function LocationHub() {
     >
       <div className="rounded-3xl border border-white/15 bg-white shadow-[0_24px_80px_rgba(0,62,137,0.28)]">
         <div className="overflow-hidden rounded-t-3xl border-b border-[var(--brand-blue)]/10 bg-gradient-to-br from-[#f3f8ff] via-white to-[#eefbf4] px-5 py-6 sm:px-8 sm:py-8">
-          <p className="mb-2 inline-flex items-center gap-2 rounded-full bg-[var(--brand-blue)]/8 px-3 py-1 text-xs font-semibold tracking-wide text-[var(--brand-blue)]">
-            <ShieldCheck className="size-3.5" aria-hidden />
-            Privacidade respeitada · só para achar seu grupo
+          <p className="mb-2 inline-flex max-w-full items-start gap-2 rounded-2xl bg-[var(--brand-blue)]/8 px-3 py-1.5 text-left text-xs font-semibold leading-snug tracking-wide text-[var(--brand-blue)] sm:items-center">
+            <ShieldCheck className="mt-0.5 size-3.5 shrink-0 sm:mt-0" aria-hidden />
+            Sua localização não é armazenada — usamos só para achar o melhor grupo para você
           </p>
           <h2
             id="hub-title"
@@ -166,7 +166,7 @@ export function LocationHub() {
           </h2>
           <p className="mt-3 text-base leading-relaxed text-slate-600">
             Informe onde você está — ou digite sua cidade — e vamos te levar ao
-            grupo de apoio da sua região.
+            grupo da sua região.
           </p>
         </div>
 
@@ -328,7 +328,7 @@ export function LocationHub() {
           {flow.status === "ready" && !manualOpen && (
             <p className="flex items-center justify-center gap-2 text-center text-xs text-slate-500">
               <MessageCircle className="size-3.5" aria-hidden />
-              Lá você recebe novidades e se conecta com apoiadores da sua região.
+              Lá você recebe novidades e se conecta com pessoas da sua região.
             </p>
           )}
         </div>
