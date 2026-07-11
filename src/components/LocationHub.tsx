@@ -165,9 +165,6 @@ export function LocationHub() {
           >
             Como entrar no grupo certo
           </h2>
-          <p className="mt-3 text-base leading-relaxed text-slate-600">
-            Esta página só faz uma coisa: te levar ao WhatsApp da sua região.
-          </p>
 
           <ol className="mt-5 space-y-2.5 text-sm text-slate-700">
             <li className="flex gap-3">
@@ -199,7 +196,7 @@ export function LocationHub() {
               <strong className="font-semibold text-slate-800">O que é este grupo:</strong>{" "}
               canal de avisos do Deputado para a sua região.{" "}
               <strong className="font-semibold text-slate-800">Não é</strong> um
-              grupo de conversa entre participantes. Só o Deputado envia mensagens.
+              grupo de conversa entre participantes.
             </span>
           </p>
         </div>

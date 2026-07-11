@@ -39,7 +39,7 @@ export default function HomePage() {
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-blue-100 sm:text-lg">
           São grupos por cidade, vale ou região do RS. Lá você recebe novidades
-          e informações do Deputado. Só ele envia mensagens.
+          e informações do Deputado.
         </p>
       </header>
 

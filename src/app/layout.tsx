@@ -17,7 +17,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: "Grupo de WhatsApp da sua região | Deputado Lucas Redecker",
   description:
-    "Entre no grupo de WhatsApp do Deputado Lucas Redecker na sua região. Receba novidades e informações. Só o Deputado envia mensagens.",
+    "Entre no grupo de WhatsApp do Deputado Lucas Redecker na sua região. Receba novidades e informações.",
   openGraph: {
     title: "Grupo de WhatsApp da sua região | Deputado Lucas Redecker",
     description:
