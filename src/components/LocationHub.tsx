@@ -326,7 +326,7 @@ export function LocationHub() {
           {flow.status === "ready" && !manualOpen && (
             <p className="flex items-center justify-center gap-2 text-center text-xs text-slate-500">
               <MessageCircle className="size-3.5" aria-hidden />
-              Lá você recebe novidades e se conecta com pessoas da sua região.
+              Lá você recebe novidades e informações do Deputado sobre a sua região.
             </p>
           )}
         </div>
