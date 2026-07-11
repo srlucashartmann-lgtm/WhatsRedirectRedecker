@@ -26,7 +26,7 @@ export default function HomePage() {
         <div className="float-soft mb-8 rounded-2xl bg-black/25 px-5 py-4 backdrop-blur-sm ring-1 ring-white/15">
           <Image
             src="/logos/logo-fundos-escuros.png"
-            alt="Lucas Redecker — Deputado Federal"
+            alt="Lucas Redecker, Deputado Federal"
             width={420}
             height={140}
             priority
@@ -34,15 +34,12 @@ export default function HomePage() {
           />
         </div>
 
-        <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[var(--brand-yellow)]">
-          Rio Grande do Sul
-        </p>
         <h1 className="max-w-2xl font-[family-name:var(--font-display)] text-3xl font-extrabold leading-tight text-white sm:text-5xl">
           Encontre o grupo da sua região
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-blue-100 sm:text-lg">
           Receba informações e acompanhe o trabalho do Deputado Lucas Redecker
-          com gente da sua cidade e do seu vale.
+          na sua cidade ou região.
         </p>
       </header>
 
@@ -51,7 +48,7 @@ export default function HomePage() {
       <footer className="relative z-10 mt-auto border-t border-white/10 px-4 py-6 text-center text-xs text-blue-100/70">
         <p>Deputado Federal Lucas Redecker · Grupos regionais no Rio Grande do Sul</p>
         <p className="mt-1">
-          Sua localização não é armazenada — serve só para indicar o grupo certo.
+          Sua localização não é armazenada, serve só para indicar o grupo certo.
         </p>
       </footer>
     </main>

@@ -70,7 +70,7 @@ export function LocationHub() {
       setFlow({
         status: "error",
         message:
-          "Este navegador não libera a localização. Sem problema — digite sua cidade abaixo.",
+          "Este navegador não libera a localização. Sem problema, digite sua cidade abaixo.",
       });
       setManualOpen(true);
       return;
@@ -156,7 +156,7 @@ export function LocationHub() {
         <div className="overflow-hidden rounded-t-3xl border-b border-[var(--brand-blue)]/10 bg-gradient-to-br from-[#f3f8ff] via-white to-[#eefbf4] px-5 py-6 sm:px-8 sm:py-8">
           <p className="mb-2 inline-flex max-w-full items-start gap-2 rounded-2xl bg-[var(--brand-blue)]/8 px-3 py-1.5 text-left text-xs font-semibold leading-snug tracking-wide text-[var(--brand-blue)] sm:items-center">
             <ShieldCheck className="mt-0.5 size-3.5 shrink-0 sm:mt-0" aria-hidden />
-            Sua localização não é armazenada — usamos só para achar o melhor grupo para você
+            Sua localização não é armazenada, usamos só para achar o melhor grupo para você
           </p>
           <h2
             id="hub-title"
@@ -165,7 +165,7 @@ export function LocationHub() {
             Em segundos, você chega ao WhatsApp certo
           </h2>
           <p className="mt-3 text-base leading-relaxed text-slate-600">
-            Informe onde você está — ou digite sua cidade — e vamos te levar ao
+            Informe onde você está ou digite sua cidade, e vamos te levar ao
             grupo da sua região.
           </p>
         </div>
@@ -259,9 +259,6 @@ export function LocationHub() {
                 </div>
 
                 <div>
-                  <label htmlFor={inputId} className="mb-2 block text-sm font-medium text-slate-700">
-                    Qual é o seu município?
-                  </label>
                   <div className="relative">
                     <Search
                       className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-slate-400"
@@ -280,6 +277,7 @@ export function LocationHub() {
                       autoComplete="off"
                       inputMode="search"
                       placeholder="Digite aqui… Ex.: Montenegro"
+                      aria-label="Buscar município"
                       role="combobox"
                       aria-expanded={suggestions.length > 0}
                       aria-controls={listId}
